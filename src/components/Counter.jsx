@@ -5,9 +5,9 @@ function Counter(){
   return(
     <>
       <h1>Count: {count}</h1>
-      <button onClick={() => {setCount(count + 1)}}>Add 1</button>
+      <button onClick={() => {setCount(prevCount => prevCount + 1)}}>Add 1</button>
 
-      <button onClick={() => {setCount(count - 1)}}>Minus 1</button>
+      <button onClick={() => {setCount(prevCount => prevCount - 1)}}>Minus 1</button>
 
       <button onClick = {() => {setCount(0)}}>Reset</button>
     </>
