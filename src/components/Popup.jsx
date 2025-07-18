@@ -1,6 +1,14 @@
 function Popup({ percent, name, age }) {
   const task = `Are you ${percent}% sure`;
+
+  function confirmation(){
+      console.log(name)
+    }
+  function log(e){
+    console.log(e.target.value);
+  }
   return (
+
     <>
       <div className="popup">
         <h1 className="PopQuestion">
@@ -10,14 +18,15 @@ function Popup({ percent, name, age }) {
         <div className="flex">
           <button
             className="yes"
-            onClick={() => {
-              console.log(name);
-            }}
+            onClick={confirmation}
           >
             Yes
           </button>
           <button className="no">No</button>
-        </div>
+        </div><br />
+
+        <label htmlFor="">Name</label>
+        <input type="text" placeholder="Your Name" onChange={log} />
       </div>
     </>
   );
