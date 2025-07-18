@@ -4,11 +4,13 @@ import { useState } from "react";
 
 function App() {
   const [popUpOpen, setPopUpOpen] = useState(false);
+
   
   
   return (
     <>
       <Todo task="Learn React" />
+      <button onClick={() => setPopUpOpen(true)}>Show</button>
       <Todo task="Build a project" />
       <Todo task="Apply for jobs" />
       <Todo task="Chill and flex" />
