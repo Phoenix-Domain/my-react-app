@@ -1,20 +1,15 @@
 import Popup from "./components/Popup";
 import Todo from "./components/Todo";
-import { useState } from "react";
+import Counter from './components/Counter'
 
 function App() {
-  const [popUpOpen, setPopUpOpen] = useState(false);
+  
 
   
   
   return (
     <>
-      <Todo task="Learn React" />
-      <button onClick={() => setPopUpOpen(true)}>Show</button>
-      <Todo task="Build a project" />
-      <Todo task="Apply for jobs" />
-      <Todo task="Chill and flex" />
-      {popUpOpen && <Popup /> /*if statement*/} 
+      <Counter />
     </>
   )
 }
