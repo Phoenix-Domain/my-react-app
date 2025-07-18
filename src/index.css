@@ -5,6 +5,10 @@
   margin: 1rem auto;
   border-radius: 1rem;
   box-shadow:1px 1px 5px rgb(29, 28, 28);
+  position:fixed;
+  top:0;
+  left:20%;
+  z-index: 999;
 }
 button{
   padding:0.5rem 1.5rem;
