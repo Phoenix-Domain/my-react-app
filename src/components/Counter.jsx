@@ -5,7 +5,7 @@ function Counter(){
 
   return(
     <>
-      <h1>Count: {array}</h1>
+      <h1>Count: {array.toString()}</h1>
       <div>
         <button onClick={() => {
           setArray((prevArray) => [
@@ -15,7 +15,7 @@ function Counter(){
         }}>Increment</button>
 
         <button onClick={() => {
-          setArray((prevArray) => [...prevArray, -1])
+          setArray((prevArray) => [...prevArray, '-1'])
         }}>Decrement</button>
         <button onClick={() => {
           setArray([])
