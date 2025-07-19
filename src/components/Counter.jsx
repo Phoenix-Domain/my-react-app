@@ -1,16 +1,25 @@
 import { useState } from 'react';
 
 function Counter(){
-  const [user, setUser] = useState([1,5,6,9,4]);
+  const [array, setArray] = useState([]);
 
   return(
     <>
-      <h1>Count: {user[0]}</h1>
+      <h1>Count: {array}</h1>
       <div>
-        <button>Increment</button>
+        <button onClick={() => {
+          setArray((prevArray) => [
+            ...prevArray,
+            '+1'
+          ])
+        }}>Increment</button>
 
-        <button>Decrement</button>
-        <button>Reset</button>
+        <button onClick={() => {
+          setArray((prevArray) => [...prevArray, -1])
+        }}>Decrement</button>
+        <button onClick={() => {
+          setArray([])
+        }}>Reset</button>
       </div>
     </>
   )
