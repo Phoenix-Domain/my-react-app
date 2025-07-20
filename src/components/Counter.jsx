@@ -1,21 +1,21 @@
 import { useState } from 'react';
 
 function Counter(){
-  const [array, setArray] = useState([]);
+  const [array, setArray] = useState([1,2,3,4]);
 
   return(
     <>
-      <h1>Count: {array.toString()}</h1>
+      <h1>Count: {array}</h1>
       <div>
         <button onClick={() => {
           setArray((prevArray) => [
             ...prevArray,
-            '+1'
+            prevArray.map((x) => {x + 1})
           ])
         }}>Increment</button>
 
         <button onClick={() => {
-          setArray((prevArray) => [...prevArray, prevArray.forEach((x,i) => {x[i-1]})])
+          setArray((prevArray) => [...prevArray, prevArray.map((x) => {x - 1})])
         }}>Decrement</button>
         <button onClick={() => {
           setArray([])
