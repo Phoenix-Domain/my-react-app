@@ -25,5 +25,7 @@ function Counter(){
   )
 }
 
+// Create new component
+
 
 export default Counter;
