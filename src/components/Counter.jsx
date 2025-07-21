@@ -15,7 +15,7 @@ function Counter(){
         }}>Increment</button>
 
         <button onClick={() => {
-          setArray((prevArray) => [...prevArray, prevArray.map((x) => {x - 1})])
+         
         }}>Decrement</button>
         <button onClick={() => {
           setArray([])
