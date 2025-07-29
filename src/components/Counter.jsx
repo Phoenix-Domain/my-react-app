@@ -18,7 +18,7 @@ function Counter(){
         setCount(prevCount => prevCount - 1)
       }}>Decrement</button>
 
-      <button>Reset</button>
+      <button onClick={() => {setCount(0)}}>Reset</button>
     </>
   )
 }
