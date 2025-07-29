@@ -1,10 +1,10 @@
 
-function Counter({ no3 }){
+function Counter(){
 
   return(
     <>
       <h1 className="header">Counter App</h1>
-      <h3>Count: { no3 }</h3>
+      <h3>Count: 0</h3>
       <button>Increment</button>
       <button>Decreament</button>
       <button>Reset</button>
