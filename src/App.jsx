@@ -7,7 +7,7 @@ function App() {
   
   return (
     <>
-      <Counter/>
+      <Counter no3="run"/>
     </>
   )
 }
