@@ -3,10 +3,10 @@
 function Popup(){
 
   return(
-    <div>
+    <div className='popup'>
       <h2>Are you sure?</h2>
-      <button>Yes</button>
-      <button>No</button>
+      <button className='yes'>Yes</button>
+      <button className='no'>No</button>
     </div>
   )
 }
