@@ -2,23 +2,19 @@ import { useState } from "react";
 
 function Counter(){
 
-  const [count, setCount] = useState(0)
+  const [user, setUser] = useState({name: 'victory', age: 12})
 
   return(
     <>
       <h1 className="header">Counter App</h1>
 
-      <h3>Count: {count}</h3>
+      <h3></h3>
 
-      <button onClick={() => {
-        setCount(prevCount => prevCount + 1)
-      }}>Increment</button>
+      <button>Increment</button>
 
-      <button onClick={() => {
-        setCount(prevCount => prevCount - 1)
-      }}>Decrement</button>
+      <button>Decrement</button>
 
-      <button onClick={() => {setCount(0)}}>Reset</button>
+      <button>Reset</button>
     </>
   )
 }
