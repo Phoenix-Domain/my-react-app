@@ -7,7 +7,9 @@ function App() {
   
   return (
     <>
-      <Todo />
+      <Todo task='Learn React'/>
+      <Todo task='Prep for Interview'/>
+      <Todo task='Land 100k job'/>
     </>
   )
 }
