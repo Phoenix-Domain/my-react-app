@@ -3,15 +3,21 @@ import Popup from './Popup';
 
 function Todo({ task }){
   const [popUpCard, setPopUpCard] = useState(false);
+  
 
+  function displayPopUp(){
+    setPopUpCard(true);
+  }
+
+  function removePopUp(){
+    setPopUpCard(false);
+  }
 
   return(
     <>
       <h2>{task}</h2>
-      <button onClick={() => {
-        setPopUpCard(true)
-      }}>Delete</button>
-      {popUpCard && <Popup/>}
+      <button onClick={() => {displayPopUp()}}>Delete</button>
+      {popUpCard && <Popup removePopUp={removePopUp}/>}
     </>
   )
 }
