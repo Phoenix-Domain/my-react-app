@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Popup from './Popup';
 
 function Todo({ task }){
@@ -13,6 +13,9 @@ function Todo({ task }){
     setPopUpCard(false);
   }
 
+  useEffect(() => {
+    console.log('component mounted')
+  }, [])
   return(
     <>
       <h2>{task}</h2>
