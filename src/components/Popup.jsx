@@ -3,11 +3,16 @@
 function Popup({removePopUp}){
 
   return(
-    <div className='popup'>
-      <h2>Are you sure?</h2>
-      
-      <button className='yes'>Yes</button>
-      <button className='no' onClick={removePopUp}>No</button>
+    <div>
+      <div className='popup'>
+        <h2>Are you sure?</h2>
+        
+        <div className="flex">
+          <button className='yes'>Yes</button>
+          <button className='no' onClick={removePopUp}>No</button>
+        </div>
+      </div>
+      <div className="backdrop" onClick={removePopUp}></div>
     </div>
   )
 }
