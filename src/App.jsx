@@ -1,12 +1,24 @@
-import Todo from './components/Todo';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/home'
+import Contact from './pages/contact'
+import About from './pages/about'
+
 
 function App() {
+
   return (
-    <>
-      <Todo task='Learn React'/>
-      <Todo task='Prep for Interview'/>
-      <Todo task='Land 100k job'/>
-    </>
+   <Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+
+
+      </Routes>
+     <>
+      
+     </>
+   </Router>
   )
 }
 
