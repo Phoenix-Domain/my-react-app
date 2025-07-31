@@ -11,11 +11,26 @@ function Counter(){
       <h3>Name: {user.name.toUpperCase()}</h3>
       <h3>Age: {user.age}</h3>
 
-      <button>Increment</button>
+      <button onClick={() => {
+        setUser(prevUser => ({
+          ...prevUser,
+          age: prevUser.age + 1
+        }))
+      }}>Increment Age</button>
 
-      <button>Decrement</button>
+      <button onClick={() => {
+        setUser(prevUser => ({
+          ...prevUser,
+          age: prevUser.age - 1
+        }))
+      }}>Decrement Age</button>
 
-      <button>Reset</button>
+      <button onClick={() => {
+        setUser(prevUser => ({
+          ...prevUser,
+          age:21
+        }))
+      }}>Reset Age</button>
     </>
   )
 }
