@@ -1,12 +1,13 @@
 
 
-function Popup(){
+function Popup({removePopUp}){
 
   return(
     <div className='popup'>
       <h2>Are you sure?</h2>
+      
       <button className='yes'>Yes</button>
-      <button className='no'>No</button>
+      <button className='no' onClick={removePopUp}>No</button>
     </div>
   )
 }
