@@ -19,7 +19,6 @@ function Counter(){
       }}>Decrement</button>
 
       <button onClick={() => {setCount(0)}}>Reset</button>
-      <button type="reset">Reset</button>
     </>
   )
 }
