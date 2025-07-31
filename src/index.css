@@ -10,6 +10,16 @@
   left:20%;
   z-index: 999;
 }
+
+.backdrop{
+  background: rgba(0,0,0,0.5);
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 998;
+}
 button{
   padding:0.5rem 1.5rem;
   border-radius:1.5rem;
@@ -21,6 +31,7 @@ button{
 .flex{
   display:flex;
   justify-content: space-between;
+  gap:1rem;
 }
 .yes{
   background-color: blue;
