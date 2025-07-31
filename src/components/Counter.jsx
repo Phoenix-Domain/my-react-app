@@ -2,14 +2,14 @@ import { useState } from "react";
 
 function Counter(){
 
-  const [user, setUser] = useState({name: 'victory', age: 21})
+  const [user, setUser] = useState(['+1', '+3'])
 
   return(
     <>
       <h1 className="header">Info App</h1>
 
-      <h3>Name: {user.name.toUpperCase()}</h3>
-      <h3>Age: {user.age}</h3>
+      <h3>Name: Victory</h3>
+      <h3>Age: {user.join(', ')}</h3>
 
       <button onClick={() => {
         setUser(prevUser => ({
