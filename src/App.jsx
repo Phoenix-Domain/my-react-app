@@ -4,7 +4,7 @@ import Home from './pages/home';
 import Contact from './pages/contact';
 import About from './pages/about';
 import Posts from './pages/Posts';
-
+import Users from './pages/Users'
 
 function App() {
 
@@ -13,9 +13,7 @@ function App() {
     <Nav />
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path="/Contact" element={<Contact />} />
-      <Route path="/About" element={<About />} />
-      <Route path="/Posts" element={<Posts />} />
+      <Route path='/Users/:username' element={<Users /> } />
     </Routes>
     <>
     
