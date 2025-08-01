@@ -13,17 +13,18 @@ function Home(){
 
   useEffect(() => {
     fetchData();
-  },[users])
+  },[])
   return(
-    <div style={{border:'1px solid red', padding:'1rem'}}>
-      {
-        users.length > 0 ? <div>
-        <div>Name: {users[0]?.name}</div>
-        <div>Username: {users[0]?.username}</div>
-        <div>ID: {users[0]?.id}</div>
-        </div> : <div>Loading...</div>
-      }
+    <div>
+      {users.map((user) => (
+        <div style={{border: '1px solid red'}}>
+          <div>Name: {user[0]?.name}</div>
+          <div>Username: {user[0]?.username}</div>
+          <div>ID: {user[0]?.id}</div>
+        </div>
+      ))}
     </div>
+    
   )
 }
 
