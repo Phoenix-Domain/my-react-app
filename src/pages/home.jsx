@@ -15,10 +15,15 @@ function Home(){
     fetchData();
   },[users])
   return(
-    <>
-      <h1>Home</h1>
-      { users.length > 0 ? <p>{users[5]?.username}</p> : <p>Loading...</p> }
-    </>
+    <div style={{border:'1px solid red', padding:'1rem'}}>
+      {
+        users.length > 0 ? <div>
+        <div>Name: {users[0]?.name}</div>
+        <div>Username: {users[0]?.username}</div>
+        <div>ID: {users[0]?.id}</div>
+        </div> : <div>Loading...</div>
+      }
+    </div>
   )
 }
 
