@@ -17,7 +17,7 @@ function Home(){
   return(
     <div>
       {users.map((user) => (
-        <div style={{border: '1px solid red'}}>
+        <div style={{border: '1px solid red', margin:'1rem 0'}}>
           <div>Name: {user[0]?.name}</div>
           <div>Username: {user[0]?.username}</div>
           <div>ID: {user[0]?.id}</div>
