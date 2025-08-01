@@ -17,7 +17,7 @@ function Home(){
   return(
     <>
       <h1>Home</h1>
-      <p></p>
+      { users.length > 0 ? <p>{users[5]?.username}</p> : <p>Loading...</p> }
     </>
   )
 }
