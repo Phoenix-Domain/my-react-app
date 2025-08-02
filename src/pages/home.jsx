@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import User from '../components/User';
 
 function Home(){
 
@@ -17,7 +18,7 @@ function Home(){
   return(
     <div>
       {users.map((user, index) => (
-        
+        <User user={user} key={index} />
       ))}
     </div>
     
