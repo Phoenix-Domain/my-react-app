@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 import axios from 'axios';
 import User from '../components/User';
 
@@ -16,11 +17,14 @@ function Home(){
     fetchData();
   },[])
   return(
-    <div>
+    <Link>
+      <div>
       {users.map((user, index) => (
         <User user={user} key={index} />
       ))}
-    </div>
+      </div>
+    </Link>
+    
     
   )
 }
