@@ -5,7 +5,7 @@ import axios from 'axios'
 
 function Users(){
   const { id } = useParams();
-  const [data, setData] = useState([])
+  const [data, setData] = useState(null)
 
   async function getData(){
     const {data} = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`);
@@ -15,7 +15,7 @@ function Users(){
 
   useEffect(() => {
     getData();
-  },[])
+  })
 
   return(
     <div>
