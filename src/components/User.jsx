@@ -1,7 +1,9 @@
-function User(){
+function User({ user, key }){
   return (
-    <div>
-      <h2>User Component</h2>
+    <div key={key} style={{border:'1px solid red', margin:'1rem 0'}}>
+      <div>{user?.name}</div>
+      <div>{user?.username}</div>
+      <div>{user?.id}</div>
     </div>
   )
 }
