@@ -14,9 +14,11 @@ function Users(){
   }
 
   useEffect(() => {
-    getData();
-  })
+    getData()
+  },[])
 
+  if(!data) return <div>Loading User Data...</div>
+  
   return(
     <div>
       <h1>{data.name}</h1>
