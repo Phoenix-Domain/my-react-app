@@ -1,6 +1,6 @@
-import {useParams} from 'react-router-dom';
+import {useParams, Link} from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
 
 function Users(){
@@ -17,10 +17,15 @@ function Users(){
     getData()
   },[])
 
-  if(!data) return <div>Loading User Data...</div>
-  
+  if(!data) return (
+    <div>
+      <Link to='/'>Back to Home</Link><p>Loading User Data...</p>
+    </div>
+  )
+
   return(
     <div>
+      <Link to='/'>Back to Home</Link>
       <h1>{data.name}</h1>
       <h2>{data.username}</h2>
       <h3>{data.id}</h3>
