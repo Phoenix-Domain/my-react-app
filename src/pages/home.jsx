@@ -17,13 +17,14 @@ function Home(){
     fetchData();
   },[])
   return(
-    <Link>
+    
       <div>
       {users.map((user, index) => (
-        <User user={user} key={index} />
+        <Link key={user.id} to={`/users/${user.id}`}>
+          <User user={user} key={index} />
+        </Link>
       ))}
       </div>
-    </Link>
     
     
   )
