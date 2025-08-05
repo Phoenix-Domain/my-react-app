@@ -1,16 +1,14 @@
-import Hello from './components/Hello';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Welcome from './components/Welcome';
+import Body from './components/Body';
 
 function App() {
 
   return (
    <>
-    <Hello />
     <Header />
+    <Body />
     <Footer />
-    <Welcome name="Phoenix" message='Rejoice'/>
    </>
   )
 }
