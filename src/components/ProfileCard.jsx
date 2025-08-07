@@ -9,13 +9,25 @@ function ProfileCard(){
 
   return(
     <>
-      <p>Name: {name}</p>
+      <p>
+        Name: {name}
 
-      <p>Age: {age}</p>
+        <button className='border-1 py-2 px-5 rounded-full bg-purple-900 text-white font-bold text-xl active:bg-blue-900'>Change Name</button>
+      </p>
 
-      <p>Location: {location}</p>
+      <p>
+        Age: {age}
 
-      <button>Edit</button>
+        <button className='border-1 py-2 px-5 rounded-full bg-purple-900 text-white font-bold text-xl active:bg-blue-900'>Change Age</button>
+      </p>
+
+      <p>
+        Location: {location}
+
+        <button className='border-1 py-2 px-5 rounded-full bg-purple-900 text-white font-bold text-xl active:bg-blue-900'>Change Location</button>
+      </p>
+
+      
     </>
   )
 }
