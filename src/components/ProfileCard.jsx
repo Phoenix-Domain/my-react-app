@@ -9,11 +9,11 @@ function ProfileCard(){
 
   return(
     <>
-      <p>Name: </p>
+      <p>Name: {name}</p>
 
-      <p>Age: </p>
+      <p>Age: {age}</p>
 
-      <p>Location: </p>
+      <p>Location: {location}</p>
 
       <button>Edit</button>
     </>
