@@ -5,7 +5,7 @@ function Body(){
   return(
     <>
       <Hello />
-      <Welcome name="Phoenix Domain" message="Welcome to my Domain" />
+      <Welcome name="Phoenix Domains" message="Welcome to my Domain" />
     </>
   )
 }
