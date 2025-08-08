@@ -9,7 +9,7 @@ function ProfileCard(){
   <>
     <form action="">
       <input type="text" id="text" className="border-2 my-5 mx-3 py-1 px-1"  onChange={() => {setInput(textValue.value)}}/>
-      <p>{input}</p>
+      {/* <p>{input}</p> */}
     </form>
   </>
  )
