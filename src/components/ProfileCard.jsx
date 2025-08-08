@@ -3,7 +3,8 @@ import { useState } from 'react';
 function ProfileCard(){
   
 
- 
+ const nameVal = document.querySelector('#name');
+ const messageVal = document.querySelector('#message');
 
  return(
   <>
