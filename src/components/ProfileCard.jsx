@@ -8,7 +8,13 @@ function ProfileCard(){
  return(
   <>
     <form action="">
-      <input type="text" id="text" className="border-2 my-5 mx-3 py-1 px-1"  onChange={() => {setInput(textValue.value)}}/>
+      <label htmlFor="name" className='block'>Name:
+      <input type="text" id="name" className="border-2 my-5 mx-3 py-1 px-1"  onChange={() => {setInput(textValue.value)}}/>
+      </label>
+
+      <label htmlFor="message" className='block'>Message:
+        <input type="text" id="message" className="border-2 my-5 mx-3 py-1 px-1"  onChange={() => {setInput(textValue.value)}}/>
+      </label>
       <p>{input}</p>
     </form>
   </>
