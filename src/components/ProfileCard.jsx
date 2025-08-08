@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function ProfileCard(){
-  
+  const [message, setMessage] = useState({name:null,message:null})
 
  const nameVal = document.querySelector('#name');
  const messageVal = document.querySelector('#message');
@@ -17,12 +17,16 @@ function ProfileCard(){
         <input type="text" id="message" className="border-2 my-5 mx-3 py-1 px-1"/>
       </label>
 
-      <button className='border-1 py-2 px-5 rounded-full bg-blue-900 text-white font-bold text-2xl active:bg-red-900'>
+      <button className='border-1 py-2 px-5 rounded-full bg-blue-900 text-white font-bold text-2xl active:bg-red-900' onClick={e => {
+        e.preventDefault();
+        setMessage({name:nameVal.value, message:messageVal.value})
+      }}>
         Submit Message
       </button>
     </form>
 
-    <p></p>
+    <p>My name is {message.name}</p>
+    <p>This is my message: {message.message}</p>
   </>
  )
 }
