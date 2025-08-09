@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 function ProfileCard(){
   const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
 
  return(
   <>
@@ -20,7 +21,7 @@ function ProfileCard(){
     </form>
 
     <p>My name is: {name}</p>
-    <p>This is my message: </p>
+    <p>This is my message: {message}</p>
   </>
  )
 }
