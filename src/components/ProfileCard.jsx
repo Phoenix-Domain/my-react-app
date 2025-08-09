@@ -2,13 +2,18 @@ import { useState } from 'react';
 
 function ProfileCard(){
 
-  const [name, setName] = useState('')
+  const [name, setName] = useState('');
   const [message, setmessage] = useState('');
-  const [output, setOutput] = useState('')
+  const [output, setOutput] = useState({name:'', message:''});
 
+  function handleSubmit(e){
+    e.preventDefault();
+
+    
+  }
   return (
     <>
-      <form action="" className='rounded-xl my-3 w-fit mx-auto p-2 bg-purple-900 text-white py-2 pr-10'>
+      <form action="" className='rounded-xl my-3 w-fit mx-auto p-2 bg-purple-900 text-white py-2 pr-10' onSubmit={e => handleSubmit(e)}>
         <label  className='block my-3 font-bold'>Name: 
           <input type="text" className='bg-white text-black p-1 ml-2'/>
         </label>
