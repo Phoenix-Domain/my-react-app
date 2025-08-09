@@ -9,6 +9,7 @@ function ProfileCard(){
   function handleSubmit(e){
     e.preventDefault();
 
+    
   }
   return (
     <>
@@ -18,7 +19,7 @@ function ProfileCard(){
         </label>
         
         <label className='block my-3 font-bold'>Message: 
-          <input type="text" className='bg-white text-black p-1 ml-2'/>
+          <input type="text" className='bg-white text-black p-1 ml-2' onChange={e => setmessage(e.target.value)}/>
         </label>
 
         <button className='bg-blue-800 py-2 px-4 rounded-full text-white font-bold hover:bg-white hover:text-blue-800 ease-in duration-200' type="submit">
