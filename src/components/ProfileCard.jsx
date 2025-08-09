@@ -3,7 +3,7 @@ function ProfileCard({ name, bio, url}){
     <>
       <p>{name}</p>
       <p>{bio}</p>
-      <img src={url} alt={`Photo of ${url}`} title={`Photo of ${url}`} />
+      <img src={url} alt={`Photo of ${name}`} title={`Photo of ${name}`} />
     </>
   )
 }
