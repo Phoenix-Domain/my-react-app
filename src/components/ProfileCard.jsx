@@ -20,7 +20,7 @@ function ProfileCard(){
       <button className='border-1 py-2 px-5 rounded-full bg-blue-900 text-white font-bold text-2xl active:bg-red-900' onClick={e => {
         e.preventDefault();
         setMessage({name:nameVal.value, message:messageVal.value})
-      }}>LORD KINGZY RULES THE WORLD O
+      }}>
         Submit Message
       </button>
     </form>
