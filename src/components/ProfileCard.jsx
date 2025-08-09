@@ -9,13 +9,12 @@ function ProfileCard(){
   function handleSubmit(e){
     e.preventDefault();
 
-    
   }
   return (
     <>
       <form action="" className='rounded-xl my-3 w-fit mx-auto p-2 bg-purple-900 text-white py-2 pr-10' onSubmit={e => handleSubmit(e)}>
         <label  className='block my-3 font-bold'>Name: 
-          <input type="text" className='bg-white text-black p-1 ml-2'/>
+          <input type="text" className='bg-white text-black p-1 ml-2' onChange={e => setName(e.target.value)}/>
         </label>
         
         <label className='block my-3 font-bold'>Message: 
