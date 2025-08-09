@@ -1,10 +1,7 @@
 import { useState } from 'react';
 
 function ProfileCard(){
-  const [message, setMessage] = useState({name:null,message:null})
-
- const nameVal = document.querySelector('#name');
- const messageVal = document.querySelector('#message');
+  
 
  return(
   <>
