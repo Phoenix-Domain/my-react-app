@@ -7,6 +7,8 @@ function Footer(){
     <>
       <Counter />
       <ProfileCard name="Batubo Victory" bio="talented Individual" url='src/assets/react.svg'/>
+
+      <ProfileCard name="Twister" bio="crazy psycho" url='src/assets/react.svg'/>
     </>
   )
 }
