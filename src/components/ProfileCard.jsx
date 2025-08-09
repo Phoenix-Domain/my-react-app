@@ -1,6 +1,11 @@
 import { useState } from 'react';
 
 function ProfileCard(){
+
+  const [name, setName] = useState('')
+  const [message, setmessage] = useState('');
+  const [output, setOutput] = useState('')
+
   return (
     <>
       <form action="" className='rounded-xl my-3 w-fit mx-auto p-2 bg-purple-900 text-white py-2 pr-10'>
