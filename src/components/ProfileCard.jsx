@@ -4,7 +4,7 @@ function ProfileCard(){
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
 
-  const [output, setOutput] = useState({name, message})
+  const [output, setOutput] = useState({name:'', message:''})
 
   
   function handleSubmit(e){
