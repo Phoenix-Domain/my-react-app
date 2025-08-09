@@ -6,8 +6,6 @@ function ProfileCard(){
 
   const [output, setOutput] = useState({name, message})
 
-  const nameVal = document.querySelector('#name');
-  const messageVal = document.querySelector('#message');
   
   function handleSubmit(e){
     e.preventDefault();
