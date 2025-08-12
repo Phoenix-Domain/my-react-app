@@ -11,7 +11,7 @@ function Counter(){
 
       <Display counter={counter}/>
 
-      <Controls setCounter={setCounter()} />
+      <Controls setCounter={setCounter} />
     </>
   )
 }
