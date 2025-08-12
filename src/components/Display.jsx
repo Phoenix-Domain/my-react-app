@@ -1,7 +1,7 @@
-function Display(){
+function Display({ counter }){
   return(
     <>
-    
+
     </>
   )
 }
