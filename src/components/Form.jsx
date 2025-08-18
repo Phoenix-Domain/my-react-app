@@ -1,4 +1,10 @@
+import { useState } from 'react';
+
 function Form(){
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
   return(
     <form action="">
       <article>
