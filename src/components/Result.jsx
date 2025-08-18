@@ -15,3 +15,5 @@ function Result({ name, email, message}){
     </section>
   )
 }
+
+export default Result;
