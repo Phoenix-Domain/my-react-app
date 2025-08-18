@@ -25,7 +25,7 @@ function ProductList(){
       <h1>Product List App</h1>
 
       <article className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
-        {productArr.map((product, index) => (
+        {productArr.map(product => (
           <ProductCard 
             name={product.name}
             price={product.price}
