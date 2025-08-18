@@ -1,15 +1,15 @@
-function ProductCard({ name, price, imageUrl}){
+function ProductCard({ key, name, price, imageUrl}){
   return(
     <article>
       <h3>
-        {name}
+        {key}. {name}
       </h3>
 
       <p>
         {price}
       </p>
 
-      <img src={imageUrl} alt={`Photo of ${imageUrl}`} />
+      <img src={imageUrl} alt={`Photo of ${name}`} />
     </article>
   )
 }
