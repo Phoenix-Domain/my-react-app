@@ -11,6 +11,7 @@ function App() {
     <Card name='Emeka Obi' bio='Backend engineer and API wizard' />
     <Card name='Kemi Adebayo' bio='DevOps enthusiast and cloud infrastructure expert' />
     <Card name='Kemi Adebayo' bio='DevOps enthusiast and cloud infrastructure expert' />
+    <Card name='Kemi Adebayo' bio='DevOps enthusiast and cloud infrastructure expert' />
 
    </>
   )
