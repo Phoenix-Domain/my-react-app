@@ -2,7 +2,7 @@ import Card from "./components/Card"
 import { useState } from "react"
 
 function App() {
-  const [user, setUser] = useState([
+  const [users, setUsers] = useState([
     {
       name:'Adaeze Nwosu',
 
@@ -46,7 +46,17 @@ function App() {
   
   return (
    <>
-    
+    {
+      users && users.map((user, key) => (
+        <Card 
+          id={key}
+          name={user.name}
+          bio={user.bio}
+          role={user.role}
+          about={user.about}
+        />
+      ))
+    }
    </>
   )
 }
